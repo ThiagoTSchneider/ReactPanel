@@ -1,0 +1,86 @@
+/* Estilos para o menu de navegação */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    padding: 20px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Estilos para o logotipo */
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 26px;
+    z-index: 999;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o menu de navegação */
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    margin-top: 150px; /* Espaço entre o topo e o início do menu */
+    padding: 0;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 10px 0; /* Espaçamento entre os itens do menu */
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #555;
+    transition: color 0.3s ease; /* Transição de cor suave */
+    display: block;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #B33A61;
+}
+
+#navbar li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #B33A61;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease; /* Transição suave para a linha sob o link */
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    width: 30px; /* Largura da linha sob o link ao passar o mouse */
+}
