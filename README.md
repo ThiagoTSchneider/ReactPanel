@@ -17,7 +17,7 @@ Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 1. **Clone o repositório:**
 
     ```
-    git clone https://github.com/seu-usuario/navbar-react.git
+    git 
     ```
 
 2. **Instale as dependências:**
